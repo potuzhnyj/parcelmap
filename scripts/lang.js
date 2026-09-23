@@ -1,7 +1,9 @@
+const languageSelect = document.querySelector("#languageSelect");
+
 let translations;
 
 async function load() {
-  const response = await fetch("../data/languages.json");
+  const response = await fetch("data/languages.json");
   translations = await response.json();
   const savedLanguage = localStorage.getItem("language") || "en";
 

@@ -8,16 +8,15 @@
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     />
-
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header>
       <div class="container logoAndNav">
-        <div>
-          <img src="images/favicon.svg" height="70%" />
-          <p style="font-size: 24px">
-            <b>parcel</b><span style="font-weight: lighter">map</span>
+        <div class="brand">
+          <img class="brandLogo" src="images/favicon.svg" alt="parcelmap logo" />
+          <p class="brandName">
+            <b>parcel</b><span>map</span>
           </p>
         </div>
         <nav>
@@ -43,27 +42,33 @@
       <div class="container information">
         <div class="parcelMapSide"><div id="map"></div></div>
         <div class="parcelInfoSide">
-          <p style="font-size: 24px; margin-bottom: 5px">
-            <b>parcel</b><span style="font-weight: lighter">map</span>
+          <p class="panelBrand">
+            <b>parcel</b><span>map</span>
           </p>
 
-          <p style="margin-bottom: 5px" data-i18n="description"></p>
-          <hr style="color: #204f3d" />
+          <p class="panelDescription" data-i18n="description"></p>
+          <hr />
           <div class="parcelInfo">
-            <p style="color: #db9558" data-i18n="selectedParcel"></p>
-            <p style="font-size: 24px" class="bold">132/2</p>
-            <p>Jicin, bla</p>
-            <div class="parcelSize">
-              <p data-i18n="registeredArea"></p>
-              <p style="font-size: 24px" class="bold">850 m<sup>2</sup></p>
+            <p class="selectedLabel" data-i18n="selectedParcel"></p>
+            <div id="emptyState" class="emptyState">
+              <div class="emptyIcon">⌖</div>
+              <p data-i18n="selectParcelP1"></p>
+              <span data-i18n="selectParcelP2"></span>
             </div>
-            <p data-i18n="referenceNumber"></p>
-            <p class="bold">659541-123/2</p>
-            <p data-i18n="dataSource"></p>
-            <p class="bold">ČÚZK / INSPIRE CP</p>
-            <button id="importantButton" class="bold" data-i18n="btn">
-              Zoom to Parcel
-            </button>
+            <div id="parcelDetails" class="hidden">
+              <p class="bold" id="parcelNumber"></p>
+              <div class="parcelSize">
+                <p data-i18n="registeredArea"></p>
+                <p class="bold" id="parcelArea"></p>
+              </div>
+              <p data-i18n="referenceNumber"></p>
+              <p class="bold" id="cadastralReference"></p>
+              <p data-i18n="dataSource"></p>
+              <p class="bold">ČÚZK</p>
+              <button id="importantButton" class="bold" data-i18n="button">
+                Zoom to Parcel
+              </button>
+            </div>
           </div>
         </div>
       </div>

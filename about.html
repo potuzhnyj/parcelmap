@@ -4,20 +4,15 @@
     <meta charset="UTF-8" />
     <title>parcelmap</title>
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    />
-
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header>
       <div class="container logoAndNav">
-        <div>
-          <img src="images/favicon.svg" height="70%" />
-          <p style="font-size: 24px">
-            <b>parcel</b><span style="font-weight: lighter">map</span>
+        <div class="brand">
+          <img class="brandLogo" src="images/favicon.svg" alt="parcelmap logo" />
+          <p class="brandName">
+            <b>parcel</b><span>map</span>
           </p>
         </div>
         <nav>
@@ -41,12 +36,45 @@
         </nav>
       </div>
     </header>
+    <main class="aboutMain">
+      <div class="container aboutCard">
+        <p class="aboutEyebrow" data-i18n="aboutEyebrow"></p>
+        <h1 data-i18n="aboutTitle"></h1>
+        <p class="aboutLead" data-i18n="aboutIntro"></p>
+
+        <div class="aboutGrid">
+          <article class="aboutItem">
+            <h2 data-i18n="aboutMapTitle"></h2>
+            <p data-i18n="aboutMapText"></p>
+          </article>
+
+          <article class="aboutItem">
+            <h2 data-i18n="aboutDataTitle"></h2>
+            <p data-i18n="aboutDataText"></p>
+          </article>
+
+          <article class="aboutItem">
+            <h2 data-i18n="aboutTechTitle"></h2>
+            <p data-i18n="aboutTechText"></p>
+          </article>
+        </div>
+
+        <div class="aboutSource">
+          <p class="aboutSourceLabel" data-i18n="aboutSourceLabel"></p>
+          <a
+            href="https://services.cuzk.cz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="aboutSourceLink"
+          ></a>
+        </div>
+      </div>
+    </main>
     <div class="mobileWarning">
       <div class="rotateIcon">↻</div>
       <p data-i18n="mobileWarningP1"></p>
       <span data-i18n="mobileWarningP2"></span>
     </div>
-    <script src="scripts/app.js"></script>
     <script src="scripts/lang.js"></script>
   </body>
 </html>
