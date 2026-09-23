@@ -1,6 +1,12 @@
-# parcelmap
+<p align="center">
+  <img src="images/favicon.svg" alt="parcelmap logo" width="128" />
+</p>
 
-An interactive parcel map for the Jičín area. Click a parcel to see its parcel number, registered area and cadastral reference.
+<h1 align="center">parcelmap</h1>
+
+<p align="center">
+  An interactive parcel map for the Jičín area. Click a parcel to see its parcel number, registered area and cadastral reference.
+</p>
 
 **Live demo:** [potuzhnyj.github.io/parcelmap](https://potuzhnyj.github.io/parcelmap/)
 
@@ -52,7 +58,7 @@ Then open:
 http://localhost:8000
 ```
 
-The recommended layout is a desktop or landscape browser window.
+The application requires a desktop or landscape browser window. Smaller or portrait screens are not supported.
 
 ## Project structure
 
@@ -72,8 +78,6 @@ parcelmap/
 ├── index.html
 └── README.md
 ```
-
-The favicon is stored at `images/favicon.svg` and is referenced from both HTML pages.
 
 ## Design decisions
 
@@ -149,7 +153,7 @@ Poté otevřete:
 http://localhost:8000
 ```
 
-Pro nejlepší zobrazení je doporučený desktopový nebo horizontální režim prohlížeče.
+Aplikace vyžaduje desktopový nebo horizontální režim prohlížeče. Menší a vertikální obrazovky nejsou podporovány.
 
 ### Struktura projektu
 
@@ -169,8 +173,6 @@ parcelmap/
 ├── index.html
 └── README.md
 ```
-
-Favicon je uložený v `images/favicon.svg` a je použitý na obou HTML stránkách.
 
 ### Rozhodnutí
 
