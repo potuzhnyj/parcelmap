@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>parcelmap</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container logoAndNav">
+        <div>
+          <img src="images/favicon.svg" height="70%" />
+          <p style="font-size: 24px">
+            <b>parcel</b><span style="font-weight: lighter">map</span>
+          </p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="activePage">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+              <a href="https://github.com/potuzhnyj">GitHub</a>
+            </li>
+            <li>
+              <select id="languageSelect">
+                <option value="cs">CZ</option>
+                <option value="en">EN</option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container information">
+        <div class="parcelMapSide"><div id="map"></div></div>
+        <div class="parcelInfoSide">
+          <p style="font-size: 24px; margin-bottom: 5px">
+            <b>parcel</b><span style="font-weight: lighter">map</span>
+          </p>
+
+          <p style="margin-bottom: 5px">
+            A simple overview of<br />
+            parcels, their boundaries <br />and basic information.
+          </p>
+          <hr style="color: #204f3d" />
+          <div class="parcelInfo">
+            <p style="color: #db9558">SELECTED PARCEL</p>
+            <p style="font-size: 24px" class="bold">132/2</p>
+            <p>Jicin, bla</p>
+            <div class="parcelSize">
+              <p>Registered Area</p>
+              <p style="font-size: 24px" class="bold">850 m<sup>2</sup></p>
+            </div>
+            <p>Reference Number</p>
+            <p class="bold">659541-123/2</p>
+            <p>Data Source</p>
+            <p class="bold">ČÚZK / INSPIRE CP</p>
+            <button id="importantButton" class="bold">Zoom to Parcel</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="mobileWarning">
+      <div class="rotateIcon">↻</div>
+      <p>Please rotate your device</p>
+      <span>or use the desktop version</span>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
