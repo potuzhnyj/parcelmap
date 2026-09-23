@@ -12,6 +12,8 @@ async function load() {
 }
 
 function setLanguage(lang) {
+  document.documentElement.lang = lang;
+
   document.querySelectorAll("[data-i18n]").forEach((e) => {
     const key = e.dataset.i18n;
     e.textContent = translations[lang][key];
