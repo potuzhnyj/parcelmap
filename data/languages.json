@@ -1,0 +1,26 @@
+{
+  "en": {
+    "home": "Home",
+    "about": "About",
+    "description": "A simple overview of parcels, their boundaries and basic information.",
+    "selectedParcel": "SELECTED PARCEL",
+    "registeredArea": "Registered Area",
+    "referenceNumber": "Reference Number",
+    "dataSource": "Data Source",
+    "btn": "Zoom to Parcel",
+    "mobileWarningP1": "Please rotate your device",
+    "mobileWarningP2": "or use the desktop version"
+  },
+  "cs": {
+    "home": "Domů",
+    "about": "O projektu",
+    "description": "Jednoduchý přehled parcel, jejich hranic a základních údajů.",
+    "selectedParcel": "VYBRANÁ PARCELA",
+    "registeredArea": "Evidovaná výměra",
+    "referenceNumber": "Referenční číslo",
+    "dataSource": "Zdroj dat",
+    "btn": "Přiblížit parcelu",
+    "mobileWarningP1": "Otočte prosím své zařízení",
+    "mobileWarningP2": "nebo použijte verzi pro počítač"
+  }
+}

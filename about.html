@@ -2,8 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Mapa parcel</title>
+    <title>parcelmap</title>
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
 
     <link rel="stylesheet" href="styles/style.css" />
   </head>
@@ -18,21 +22,31 @@
         </div>
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="activePage">About</a></li>
+            <li>
+              <a href="index.html" data-i18n="home"></a>
+            </li>
+            <li>
+              <a href="about.html" class="activePage" data-i18n="about"></a>
+            </li>
             <li>
               <a href="https://github.com/potuzhnyj">GitHub</a>
+            </li>
+            <li>
+              <select id="languageSelect">
+                <option value="en">EN</option>
+                <option value="cs">CZ</option>
+              </select>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <div class="container">
-        <div id="map"></div>
-        <div id="parcelInfo"></div>
-      </div>
-    </main>
+    <div class="mobileWarning">
+      <div class="rotateIcon">↻</div>
+      <p data-i18n="mobileWarningP1"></p>
+      <span data-i18n="mobileWarningP2"></span>
+    </div>
     <script src="scripts/app.js"></script>
+    <script src="scripts/lang.js"></script>
   </body>
 </html>

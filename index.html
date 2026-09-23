@@ -22,15 +22,17 @@
         </div>
         <nav>
           <ul>
-            <li><a href="index.html" class="activePage">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li>
+              <a href="index.html" class="activePage" data-i18n="home"></a>
+            </li>
+            <li><a href="about.html" data-i18n="about"></a></li>
             <li>
               <a href="https://github.com/potuzhnyj">GitHub</a>
             </li>
             <li>
               <select id="languageSelect">
-                <option value="cs">CZ</option>
                 <option value="en">EN</option>
+                <option value="cs">CZ</option>
               </select>
             </li>
           </ul>
@@ -45,34 +47,34 @@
             <b>parcel</b><span style="font-weight: lighter">map</span>
           </p>
 
-          <p style="margin-bottom: 5px">
-            A simple overview of<br />
-            parcels, their boundaries <br />and basic information.
-          </p>
+          <p style="margin-bottom: 5px" data-i18n="description"></p>
           <hr style="color: #204f3d" />
           <div class="parcelInfo">
-            <p style="color: #db9558">SELECTED PARCEL</p>
+            <p style="color: #db9558" data-i18n="selectedParcel"></p>
             <p style="font-size: 24px" class="bold">132/2</p>
             <p>Jicin, bla</p>
             <div class="parcelSize">
-              <p>Registered Area</p>
+              <p data-i18n="registeredArea"></p>
               <p style="font-size: 24px" class="bold">850 m<sup>2</sup></p>
             </div>
-            <p>Reference Number</p>
+            <p data-i18n="referenceNumber"></p>
             <p class="bold">659541-123/2</p>
-            <p>Data Source</p>
+            <p data-i18n="dataSource"></p>
             <p class="bold">ČÚZK / INSPIRE CP</p>
-            <button id="importantButton" class="bold">Zoom to Parcel</button>
+            <button id="importantButton" class="bold" data-i18n="btn">
+              Zoom to Parcel
+            </button>
           </div>
         </div>
       </div>
     </main>
     <div class="mobileWarning">
       <div class="rotateIcon">↻</div>
-      <p>Please rotate your device</p>
-      <span>or use the desktop version</span>
+      <p data-i18n="mobileWarningP1"></p>
+      <span data-i18n="mobileWarningP2"></span>
     </div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/lang.js"></script>
   </body>
 </html>
